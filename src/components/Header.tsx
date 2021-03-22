@@ -1,6 +1,7 @@
 import Logo from '../assets/images/logo.svg'
 
-import styles from '../styles/components/header.module.scss'
+import { SignInButton } from '@/components/SignInButton'
+import styles from '@/styles/components/header.module.scss'
 
 export function Header() {
   return (
@@ -11,6 +12,8 @@ export function Header() {
           <a className={styles.active}>Home</a>
           <a>Posts</a>
         </nav>
+
+        <SignInButton />
       </div>
     </header>
   )

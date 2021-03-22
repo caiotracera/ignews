@@ -16,7 +16,7 @@ export default NextAuth({
     signingKey: process.env.SIGNIN_KEY
   },
   callbacks: {
-    async signIn(user) {
+    async signIn(user, account, profile) {
       const { email } = user
 
       try {

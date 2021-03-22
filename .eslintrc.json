@@ -33,6 +33,7 @@
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "no-new": "off",
+    "camelcase": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }

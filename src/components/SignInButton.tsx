@@ -1,14 +1,17 @@
 import { FaGithub } from 'react-icons/fa'
 import { FiX } from 'react-icons/fi'
-import { signIn, useSession } from 'next-auth/client'
+import { signIn, signOut, useSession } from 'next-auth/client'
 
 import styles from '@/styles/components/signInButton.module.scss'
 
 export function SignInButton() {
   const [session] = useSession()
-
   return session ? (
-    <button className={styles.signInButton} type="button">
+    <button
+      className={styles.signInButton}
+      type="button"
+      onClick={() => signOut()}
+    >
       <FaGithub color="#04d361" />
       Caio Tracera
       <FiX color="#737380" className={styles.closeIcon} />

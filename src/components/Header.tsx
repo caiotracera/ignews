@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import Logo from '../assets/images/logo.svg'
 
 import { SignInButton } from '@/components/SignInButton'
@@ -9,8 +11,12 @@ export function Header() {
       <div className={styles.headerContent}>
         <Logo />
         <nav>
-          <a className={styles.active}>Home</a>
-          <a>Posts</a>
+          <Link href="/">
+            <a className={styles.active}>Home</a>
+          </Link>
+          <Link href="/posts">
+            <a>Posts</a>
+          </Link>
         </nav>
 
         <SignInButton />

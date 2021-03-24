@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import Logo from '../assets/images/logo.svg'
 
 import { SignInButton } from '@/components/SignInButton'

@@ -6,7 +6,6 @@ import { RichText } from 'prismic-dom'
 
 import { getPrismicClient } from '@/services/prismic'
 import styles from '@/styles/pages/post.module.scss'
-import { redirect } from 'next/dist/next-server/server/api-utils'
 
 interface SessionProps extends Session {
   activeSubscription: {

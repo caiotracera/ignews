@@ -6,7 +6,7 @@ import { useSession } from 'next-auth/client'
 import Prismic from '@prismicio/client'
 import { RichText } from 'prismic-dom'
 
-import { getPrismicClient } from '../services/prismic'
+import { getPrismicClient } from '../../services/prismic'
 import styles from '../styles/pages/posts.module.scss'
 
 interface SessionProps extends Session {

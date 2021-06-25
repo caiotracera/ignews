@@ -6,8 +6,8 @@ import { useRouter } from 'next/router'
 import { Session } from 'next-auth'
 import { RichText } from 'prismic-dom'
 
-import { getPrismicClient } from '@/services/prismic'
-import styles from '@/styles/pages/preview.module.scss'
+import { getPrismicClient } from '../services/prismic'
+import styles from '../styles/pages/preview.module.scss'
 import { useEffect } from 'react'
 
 interface SessionProps extends Session {

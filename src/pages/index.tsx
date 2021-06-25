@@ -3,9 +3,9 @@ import { GetStaticProps } from 'next'
 
 import Avatar from '../assets/images/avatar.svg'
 
-import { stripe } from '@/services/stripe/private-stripe'
-import { SubscribeButton } from '@/components/SubscribeButton'
-import styles from '@/styles/pages/home.module.scss'
+import { stripe } from '../services/stripe/private-stripe'
+import { SubscribeButton } from '../components/SubscribeButton'
+import styles from '../styles/pages/home.module.scss'
 
 type HomeProps = {
   product: {

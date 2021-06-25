@@ -1,8 +1,8 @@
 import Logo from '../assets/images/logo.svg'
 
-import { SignInButton } from '@/components/SignInButton'
-import styles from '@/styles/components/header.module.scss'
-import { ActiveLink } from '@/components/ActiveLink'
+import { SignInButton } from '../components/SignInButton'
+import styles from '../styles/components/header.module.scss'
+import { ActiveLink } from '../components/ActiveLink'
 
 export function Header() {
   return (

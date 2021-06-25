@@ -6,7 +6,7 @@ import { getStripeJs } from '../services/stripe/public-stripe'
 import { api } from '../services/api'
 import styles from '../styles/components/subscribeButton.module.scss'
 
-interface SessionProps extends Session {
+export interface SessionProps extends Session {
   activeSubscription?: {
     data: {
       id: string
@@ -16,11 +16,7 @@ interface SessionProps extends Session {
   }
 }
 
-type SubscribeButtonProps = {
-  priceId: string
-}
-
-export function SubscribeButton({ priceId }: SubscribeButtonProps) {
+export function SubscribeButton() {
   const [session]: [SessionProps, boolean] = useSession()
   const router = useRouter()
 

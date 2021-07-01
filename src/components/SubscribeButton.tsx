@@ -26,6 +26,7 @@ export function SubscribeButton() {
       return
     }
 
+    /* istanbul ignore else */
     if (session.activeSubscription) {
       router.push('/posts')
       return

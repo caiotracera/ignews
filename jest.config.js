@@ -9,7 +9,11 @@ module.exports = {
   },
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/src/**/*.tsx'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.tsx',
+    '!src/pages/_app.tsx',
+    '!src/pages/_document.tsx'
+  ],
   coverageDirectory: 'coverage',
   coverageReporters: ['text-summary', 'lcov'],
   testEnvironment: 'jsdom',
